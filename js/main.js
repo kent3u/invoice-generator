@@ -158,7 +158,7 @@ let dd = {
                             get text() { return invoiceActive() ? 'Viivis 0.2% päevas' : '\n'; },
                         },
                         {
-                            get text() { return document.getElementById('tasuda').value || '\n'; },
+                            get text() { return document.getElementById('tasuda').value + ' EUR' || '\n'; },
                             style: 'header',
                             margin: [0, 16, 0, 0]
                         },
@@ -214,13 +214,13 @@ let dd = {
                     {
                         stack: [
                             {
-                                get text() { return document.getElementById('summaKmta').value || '\n'; }
+                                get text() { return document.getElementById('summaKmta').value + ' EUR' || '\n'; }
                             },
                             {
-                                get text() { return document.getElementById('kaibemaksKokku').value || '\n'; },
+                                get text() { return document.getElementById('kaibemaksKokku').value + ' EUR' || '\n'; },
                             },
                             {
-                                get text() { return document.getElementById('arveSumma').value || '\n'; }
+                                get text() { return document.getElementById('arveSumma').value + ' EUR' || '\n'; }
                             }
                         ],
                         alignment: 'right',
