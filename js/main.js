@@ -280,6 +280,11 @@ let dd = {
 
 document.getElementById('downloadPdf').addEventListener('click', () => {
     dd.content[2].table.body = [dd.content[2].table.body[0], ...getPdfTableRows()]
+    pdfMake.createPdf(dd).download()
+})
+
+document.getElementById('previewPdf').addEventListener('click', () => {
+    dd.content[2].table.body = [dd.content[2].table.body[0], ...getPdfTableRows()]
     pdfMake.createPdf(dd).open()
 })
 
