@@ -246,7 +246,7 @@ let dd = {
                     {
                         stack: [
                             'www.estviimistlus.ee',
-                            'info@estviimistlus.ee',
+                            'est.viimistlus@hotmail.com',
                             '+372 55 688 706'
                         ],
                         margin: [20, 0, 0, 0]
